@@ -4,8 +4,6 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 
 import { MainComponent } from './components/MainComponent';
 
-
-
 bootstrap(MainComponent, [
     ROUTER_PROVIDERS,
     FORM_PROVIDERS,

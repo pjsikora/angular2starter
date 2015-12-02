@@ -5,8 +5,11 @@
   "scripts": {
     "tsc": "tsc --project src --watch",
     "tsc-build": "tsc --project ./src --outDir ./public/app --removeComments; cp ./src/index.html ./public/",
+    "tsc-preview": "tsc --project ./src --watch --outDir ./preview/app; cp ./src/index.html ./preview/",
+
     "server": "live-server --open=src",
-    "server-build": "live-server --open=public"
+    "server-build": "live-server --open=build",
+    "server-preview": "live-server --open=preview"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.46",

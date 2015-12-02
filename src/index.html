@@ -8,8 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Angular 2 Starter">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="styles/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>Test app in ANGULAR 2</header>
@@ -17,19 +15,21 @@
         <main-component>
             Loading...
         </main-component>
+        <click-me>Loading button...</click-me>
     </main>
 
     <script src="../node_modules/systemjs/dist/system.src.js"></script>
     <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="../node_modules/angular2/bundles/http.dev.js"></script>
     <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+    
     <script>
         System.config({
             packages: {'app': {defaultExtension: 'js'}}
         });
 
         System
-          .import('app/bootstrap')
+          .import('./app/bootstrap')
           .catch(console.log.bind(console));
     </script>
 </body>

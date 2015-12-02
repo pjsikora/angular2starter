@@ -6,6 +6,8 @@ import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angula
     template: `
     <h1>{{title}}</h1>
 
+
+
     <p>Nitro Team Members:</p>
 
     <ul>
@@ -30,10 +32,12 @@ export class MainComponent {
             {
                 name: "Rafaello"
                 position: "Godlike Full Stack Developer"
-            }, {
+            },
+            {
                 name: "Bulgario"
                 position: "Godlike Front End Stack Developer"
-            }, {
+            },
+            {
                 name: "Fuknie"
                 position: "Masta QA / Project Manager"
             }];

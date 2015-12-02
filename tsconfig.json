@@ -6,6 +6,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
+    "compileOnSave": false,
+    "buildOnSave": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   }

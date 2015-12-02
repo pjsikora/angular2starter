@@ -7,4 +7,3 @@ angular2_1.bootstrap(MainComponent_1.MainComponent, [
     angular2_1.FORM_PROVIDERS,
     http_1.HTTP_PROVIDERS
 ]).then(function (success) { return console.log('AppComponent bootstrapped!'); }, function (error) { return console.log(error); });
-//# sourceMappingURL=bootstrap.js.map
