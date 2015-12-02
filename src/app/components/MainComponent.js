@@ -32,7 +32,9 @@ var MainComponent = (function () {
     MainComponent = __decorate([
         angular2_1.Component({
             selector: 'main-component',
-            template: "\n    <h1>{{title}}</h1>\n\n\n\n    <p>Nitro Team Members:</p>\n\n    <ul>\n      <li *ng-for=\"#teamMember of teamMembers\">\n        <p><strong>{{ teamMember.name }}</strong></p>\n        <p>{{ teamMember.position }}</p>\n      </li>\n    </ul>\n  "
+            encapsulation: angular2_1.ViewEncapsulation.Native,
+            styles: ["\n      h1 {\n        color: red;\n      }\n    "],
+            template: "\n    <h1>{{title}}</h1>\n\n    <p>Nitro Team Members:</p>\n\n    <ul>\n      <li *ng-for=\"#teamMember of teamMembers\">\n        <p><strong>{{ teamMember.name }}</strong></p>\n        <p>{{ teamMember.position }}</p>\n      </li>\n    </ul>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MainComponent);

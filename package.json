@@ -4,12 +4,14 @@
   "version": "0.5.0",
   "scripts": {
     "tsc": "tsc --project src --watch",
-    "tsc-build": "tsc --project ./src --outDir ./public/app --removeComments; cp ./src/index.html ./public/",
+    "tsc-build": "tsc --project ./src --outDir ./public/app --removeComments",
     "tsc-preview": "tsc --project ./src --watch --outDir ./preview/app; cp ./src/index.html ./preview/",
 
     "server": "live-server --open=src",
-    "server-build": "live-server --open=build",
-    "server-preview": "live-server --open=preview"
+    "server-build": "live-server --open=public",
+    "server-preview": "live-server --open=preview",
+
+    "cat-scripts-public": "cat node_modules/systemjs/dist/system.src.js node_modules/angular2/bundles/angular2.dev.js node_modules/angular2/bundles/http.dev.js node_modules/angular2/bundles/router.dev.js > public/scripts.js"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.46",

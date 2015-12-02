@@ -1,12 +1,18 @@
-import { Component, bootstrap, bind, FORM_PROVIDERS } from 'angular2/angular2';
+import { Component, bootstrap, bind, FORM_PROVIDERS, ViewEncapsulation } from 'angular2/angular2';
 import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angular2/router';
 
 @Component({
     selector: 'main-component',
+    encapsulation: ViewEncapsulation.Native,
+
+    styles: [`
+      h1 {
+        color: red;
+      }
+    `],
+
     template: `
     <h1>{{title}}</h1>
-
-
 
     <p>Nitro Team Members:</p>
 
